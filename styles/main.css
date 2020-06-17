@@ -82,3 +82,108 @@ body {
   line-height: 49px;
   margin-top: 54px;
 }
+.flex-container-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-2{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product1{
+  width: 410px;
+  height: 175px;
+  background: #CCF0FE;
+  border-radius: 10px;
+}
+
+.product2{
+  width: 410px;
+  height: 175px;
+  background: #FFEAF5;
+  border: 1px solid #718096;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.product3{
+  width: 410px;
+  height: 175px;
+  background: #E7F6FF;
+  border-radius: 10px
+}
+
+.product4{
+
+  width: 410px;
+  height: 175px;
+  background: #EFF4F5;
+  border-radius: 10px;
+}
+.product-title p{
+  margin-top: 47px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #0D60D9;
+  margin-left: 25px;
+}
+.product-disc{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 25px;
+  color: #000000;
+  margin-top:11px;
+}
+
+hr{
+  width: 80%;
+}
+
+.details{
+
+}
+
+.interest{
+  margin-top: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+}
+
+.daily-interest{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-interest p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.calculate{
+  height: 100px;
+  width: 700px ;
+  margin: 25px auto;
+  background: #C4C4C4;
+  border-radius: 10px;
+  text-align: center;
+}
