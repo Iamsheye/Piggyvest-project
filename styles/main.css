@@ -49,7 +49,7 @@ body {
   margin-top: 72px;
 }
 
-#deposit {
+#deposit_amount {
   width: 915px;
   height: 92px;
   border: 2px solid #e2e8f0;
@@ -70,6 +70,7 @@ body {
   font-family: Montserrat;
   line-height: 29px;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .time-text {
@@ -98,22 +99,29 @@ body {
   height: 175px;
   background: #CCF0FE;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .product2{
   width: 410px;
   height: 175px;
   background: #FFEAF5;
-  border: 1px solid #718096;
   box-sizing: border-box;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.selectedProduct{
+  
+  border: 1px solid #718096;
 }
 
 .product3{
   width: 410px;
   height: 175px;
   background: #E7F6FF;
-  border-radius: 10px
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .product4{
@@ -122,6 +130,7 @@ body {
   height: 175px;
   background: #EFF4F5;
   border-radius: 10px;
+  cursor: pointer;
 }
 .product-title p{
   margin-top: 47px;
@@ -186,4 +195,7 @@ hr{
   background: #C4C4C4;
   border-radius: 10px;
   text-align: center;
+}
+.selectedDay{
+  background-color: #CCF0FE;
 }
