@@ -1,0 +1,84 @@
+body {
+  background: #ffffff;
+}
+
+.head-calc {
+  margin-top: 68px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 3.75rem;
+  line-height: 4.375rem;
+}
+
+.sub-head-calc {
+  color: #718096;
+  line-height: 28px;
+  font-size: 1.5rem;
+  font-family: Karla;
+}
+
+.amount {
+  width: 916px;
+  height: 195px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 51px;
+}
+
+.balance {
+  font-family: Karla;
+  font-size: 1.25rem;
+  line-height: 23px;
+  margin-top: 50px;
+}
+
+.currency {
+  color: #062863;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 3.45rem;
+  line-height: 67px;
+}
+
+.deposit-amount {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 49px;
+  margin-top: 72px;
+}
+
+#deposit {
+  width: 915px;
+  height: 92px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.time {
+  width: 915px;
+  margin-top: 60px;
+}
+
+.time-sep {
+  border: 2px solid #E2E8F0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 169px;
+  height: 92px;
+  font-family: Montserrat;
+  line-height: 29px;
+  font-size: 1.5rem;
+}
+
+.time-text {
+  margin-top: 32px;
+}
+
+.product {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  line-height: 49px;
+  margin-top: 54px;
+}

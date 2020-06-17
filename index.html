@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles/bootstrap.css"/>
+  <link href=https://fonts.googleapis.com/css2?family=Montserrat&display=swap rel="stylesheet">
+  <link href=https://fonts.googleapis.com/css2?family=Karla&display=swap rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap.css" />
   <link rel="stylesheet" href="styles/main.css">
   <title>Piggyvest Interest Calculator</title>
 </head>
+
 <body>
-  
-  
-  
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <div class="container">
+    <h1 class="head-calc">Interest Calculator</h1>
+    <p class="sub-head-calc">Let’s calculate the interest on your deposits</p>
+    <div class="amount px-5">
+      <p class="balance">TOTAL BALANCE</p>
+      <p class="currency">₦ 0.00</p>
+    </div>
+    <p class="deposit-amount">I want to deposit</p>
+    <form class="form">
+      <div class="input-deposit">
+        <input type="text" name="deposit" id="deposit" value="" />
+      </div>
+      <div class="time d-flex justify-content-between text-center">
+        <div class="time-sep">
+          <p class="time-text">7days</p>
+        </div>
+        <div class="time-sep">
+          <p class="time-text">14 days</p>
+        </div>
+        <div class="time-sep">
+          <p class="time-text">30 days</p>
+        </div>
+        <div class="time-sep">
+          <p class="time-text">90 days</p>
+        </div>
+        <div class="time-sep">
+          <p class="time-text">180 days</p>
+        </div>
+      </div>
+      <p class="product">Select Product</p>
+      
+      
+      
+      
+    </form>
+  </div>
+  <script src=https://code.jquery.com/jquery-3.5.1.js integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="js/bootstrap-js/bootstrap.min.js"></script>
   <script src="js/custom-js/script.js"></script>
 </body>
+
 </html>
