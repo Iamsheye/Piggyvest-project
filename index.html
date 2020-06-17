@@ -16,104 +16,124 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3" style="background-color: #0D60D9;">
-
       </div>
       <div class="col-sm-9">
         <h1 class="head-calc">Interest Calculator</h1>
-    <p class="sub-head-calc">Let’s calculate the interest on your deposits</p>
-    <div class="amount px-5">
-      <p class="balance">TOTAL BALANCE</p>
-      <p class="currency">₦ 0.00</p>
-    </div>
-    <p class="deposit-amount">I want to deposit</p>
-    <form class="form">
-      <div class="input-deposit">
-        <input type="text" name="deposit" id="deposit_amount" value="" />
-      </div>
-      <div class="time d-flex justify-content-between text-center">
-        <div class="time-sep" id="7days" onclick="setDays(7)">
-          <p class="time-text">7days</p>
+        <p class="sub-head-calc">Let’s calculate the interest on your deposits</p>
+        <div class="amount px-5">
+          <p class="balance">TOTAL BALANCE</p>
+          <p class="currency">₦ 0.00</p>
         </div>
-        <div class="time-sep" id="14days" onclick="setDays(14)"> 
-          <p class="time-text">14 days</p>
-        </div>
-        <div class="time-sep" id="30days" onclick="setDays(30)">
-          <p class="time-text">30 days</p>
-        </div>
-        <div class="time-sep" id="90days" onclick="setDays(90)">
-          <p class="time-text">90 days</p>
-        </div>
-        <div class="time-sep" id="180days" onclick="setDays(180)">
-          <p class="time-text">180 days</p>
-        </div>
-      </div>
-      <p class="product">Select Product</p>
-
-      <div class="flex-container-1">
-        <div class="product1" id="prd01" onclick="setProduct(1)">
-          <div class="product-title">
-            <p>Piggybank</p>
+        <p class="deposit-amount">I want to deposit</p>
+        <form class="form">
+          <div class="input-deposit">
+            <input type="text" name="deposit" class="px-4" id="deposit_amount" value="" />
           </div>
-          <p class="product-disc">Strick saving automatically. Daily, weekly or 
-            monthly. 10%  p.a</p>
-        </div>
-        
-        <div class="product2" id="prd02" onclick="setProduct(2)"> 
-          <div class="product-title">
-            <p>Flexnaira</p>
+          <div class="time d-flex justify-content-between text-center">
+            <div class="time-sep" id="7days" onclick="setDays(7)">
+              <label>
+                <p class="time-text">7 days</p>
+                <input type="radio" name="time-select" class="time-rad" value="7">
+              </label>
+            </div>
+            <div class="time-sep" id="14days" onclick="setDays(14)">
+              <label>
+                <p class="time-text">14 days</p>
+                <input type="radio" name="time-select" class="time-rad" value="14">
+              </label>
+            </div>
+            <div class="time-sep" id="30days" onclick="setDays(30)">
+              <label>
+                <p class="time-text">30 days</p>
+                <input type="radio" name="time-select" class="time-rad" value="30">
+              </label>
+            </div>
+            <div class="time-sep" id="90days" onclick="setDays(90)">
+              <label>
+                <p class="time-text">90 days</p>
+                <div class="block">
+                  <input type="radio" name="time-select" class="time-rad" value="90">
+                </div>
+              </label>
+            </div>
+            <div class="time-sep" id="180days" onclick="setDays(180)">
+              <label>
+                <p class="time-text">180 days</p>
+                <input type="radio" name="time-select" class="time-rad" value="180">
+              </label>
+            </div>
           </div>
-          <p class="product-disc">Flexible savings for emergengies. Free transfers, 
-            withdrawals etc. 10% p.a</p>
-        </div>
-      </div>
-      
-      <div class="flex-container-2">
-        <div class="product3" id="prd03" onclick="setProduct(3)">
-          <div class="product-title">
-            <p>Safe lock</p>
+          <p class="product">Select Product</p>
+          <div class="flex-container-1 width-control">
+            <div class="product1" id="prd01" onclick="setProduct(1)">
+              <label>
+                <div class="product-title">
+                  <p>Piggybank</p>
+                </div>
+                <p class="product-disc">Strick saving automatically. Daily, weekly or
+                  monthly. 10% p.a</p>
+                <input type="radio" name="product-select" class="product-rad" value="piggy">
+              </label>
+            </div>
+            <div class="product2" id="prd02" onclick="setProduct(2)">
+              <label>
+                <div class="product-title">
+                  <p>Flexnaira</p>
+                </div>
+                <p class="product-disc">Flexible savings for emergengies. Free transfers,
+                  withdrawals etc. 10% p.a</p>
+                <input type="radio" name="product-select" class="product-rad" value="flexngn">
+              </label>
+            </div>
           </div>
-          <p class="product-disc">Lock funds to avoid temptations. Upfront interest. 
-            Up to 13%p.a. </p>
-        </div>
-        
-        <div class="product4" id="prd04" onclick="setProduct(4)">
-          <div class="product-title">
-            <p>Flex Dollars</p>
+          <div class="flex-container-2 width-control">
+            <div class="product3" id="prd03" onclick="setProduct(3)">
+              <label>
+                <div class="product-title">
+                  <p>Safe lock</p>
+                </div>
+                <p class="product-disc">Lock funds to avoid temptations. Upfront interest.
+                  Up to 13%p.a. </p>
+                <input type="radio" name="product-select" class="product-rad" value="safelock">
+              </label>
+            </div>
+            <div class="product4" id="prd04" onclick="setProduct(4)">
+              <label>
+                <div class="product-title">
+                  <p>Flex Dollars</p>
+                </div>
+                <p class="product-disc">Save and grow your wealth in dollars. Up to 6% p.a.
+                  in dollars</p>
+                <input type="radio" name="product-select" class="product-rad" value="flexusd">
+              </label>
+            </div>
           </div>
-          <p class="product-disc">Save and grow your wealth in dollars. Up to 6% p.a. 
-            in dollars</p>
-        </div>
-      </div>
-      
-      
-      <hr>
-      <div class="details">
-        <div class="interest">
-          <p>Interest</p>
-        </div>
-        <div class="daily-interest">
-          <p>Daily Interest</p>
-          <p><span id="daily_interest"></span>%</p>
-        </div>
-        <div class="daily-interest">
-          <p>Annual Interest</p>
-          <p><span id="annual_interest"></span>%</p>
-        </div>
-        <div class="daily-interest">
-          <p>Total Interest Amount</p>
-          <p>N<span id="total_interest"></span></p>
-        </div>
-        
-        <button type="button" class="calculate" onclick="calculateInterest()">Calculate</button>
-      </div>
-    </form>
+          <hr>
+          <div class="details">
+            <div class="interest">
+              <p>Interest</p>
+            </div>
+            <div class="daily-interest">
+              <p>Daily Interest</p>
+              <p><span id="daily_interest"></span>%</p>
+            </div>
+            <div class="daily-interest">
+              <p>Annual Interest</p>
+              <p><span id="annual_interest"></span>%</p>
+            </div>
+            <div class="daily-interest">
+              <p>Total Interest Amount</p>
+              <p>N<span id="total_interest"></span></p>
+            </div>
+            <button type="button" class="calculate" onclick="calculateInterest()">Calculate</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
   <div>
     <input type="hidden" value="" id="days_selected">
     <input type="hidden" value="" id="product_selected">
-    
   </div>
   <script src=https://code.jquery.com/jquery-3.5.1.js integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="js/bootstrap-js/bootstrap.min.js"></script>
