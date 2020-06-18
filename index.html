@@ -105,57 +105,61 @@
                       <!-- Expected Returns -->
                       <div class="form-group mx-3 mx-md-5">
                         <label class="font-weight-bold text-primary">Expected Returns</label>
-                        <input type="text" name="deposit" class="form-control" id="deposit_amount" value=""
+                        <input type="text" name="expected_returns" class="form-control" id="expected_returns" value=""
                           onkeypress="return isNumber(event)" placeholder="Enter Amount"/>
                       </div>
                       <!-- Saving Interval -->
                       <div class="form-group mx-3 mx-md-5">
                         <label class="font-weight-bold text-primary">Savings Interval</label>
-                        <select class="form-control" name="time-select" onchange="setDays(this.value)" id="time-selector">
+                        <select class="form-control" name="savings_interval" id="savings_interval">
                           <option value="">Select Interval</option>
-                          <option value="7">Daily</option>
-                          <option value="14">Weekly</option>
-                          <option value="30">Yearly</option>
+                          <option value="Daily">Daily</option>
+                          <option value="Weekly">Weekly</option>
+                          <option value="Monthly">Monthly</option>
+                          <option value="Yearly">Yearly</option>
                         </select>
                       </div>
                       <!-- Product -->
                       <div class="form-group mx-3 mx-md-5">
                         <label class="font-weight-bold text-primary">Product</label>
-                        <select class="form-control" name="product-select" onchange="setProduct(this.value)" id="product-selector">
+                        <select class="form-control" name="product" id="product">
                           <option value="">Select Product</option>
-                          <option value="1">Piggybank</option>
-                          <option value="2">Flexnaira</option>
-                          <option value="3">Safe Lock</option>
-                          <option value="4">Flex Dollars</option>
+                          <option value="piggybank">Piggybank</option>
+                          <option value="flexnaira">Flexnaira</option>
+                          <option value="safelock">Safe Lock</option>
+                          <option value="flexdollars">Flex Dollars</option>
                         </select>
                       </div>
                       <!-- Date -->
                       <div class="form-group row mx-0 px-0 mx-md-5">
                         <div class="col">
                           <label class="font-weight-bold text-primary">Start Date</label>
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text fa fa-calendar"></span>
-                            </div>
-                            <input type="date" class="form-control" id="startDate">
-                          </div>
+                          <input type="date" class="form-control" id="startDate">
                         </div>
                         <div class="col">
                           <label class="font-weight-bold text-primary">End Date</label>
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text fa fa-calendar"></span>
-                            </div>
-                            <input type="date" class="form-control" id="Date">
-                          </div>
+                          <input type="date" class="form-control" id="endDate">
                         </div>
                       </div>
-                      <div class="form-group mx-3 mx-md-5">
+                      <div class="form-group mb-0 mx-3 mx-md-5">
                         <button type="button" class="btn btn-success btn-block p-2 p-md-3"
-                          onclick="calculateInterest()">Calculate</button>
+                          onclick="forecast()">Calculate</button>
                       </div>
-                  
                     </form>
+                    <div class="text-center mx-3 mx-md-5 mt-0">
+                      <h6 class="text-primary">Recommended Savings</h6>
+                      <h3 class="mt-0">NGN <span id="recommended_saving"></span></h3>
+                      <!-- <div class="d-flex justify-content-between">
+                        <div class="">
+                          <small>Daily Interest</small>
+                          <p><span id="daily_interest" class="font-weight-bold"></span>%</p>
+                        </div>
+                        <div class="">
+                          <small>Annual Interest</small>
+                          <p><span id="annual_interest" class="font-weight-bold"></span>%</p>
+                        </div>
+                      </div> -->
+                    </div>
                   <!-- End of Savings Forecast Body -->
                 </div>
               </div>
@@ -173,6 +177,7 @@
   <script src="js/custom-js/script.js"></script>
   <script src="js/custom-js/sidebar.js"></script>
   <script src="./js/utils/calculate.js"></script>
+  <script src="./js/utils/forecast.js"></script>
 </body>
 
 </html>
