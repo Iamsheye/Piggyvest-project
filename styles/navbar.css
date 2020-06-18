@@ -19,7 +19,7 @@
             background-color: transparent;
             border: none;
             position: relative;
-            z-index: 100;
+            z-index: 250;
         }
         .custom-burger .line{
             background-color: #083E9E;
@@ -38,6 +38,7 @@
             margin-left: 100%;
             background-color:rgba(8, 64, 160, 0.84);
             overflow: hidden;
+            z-index: 200;
         }
         .overlay-bar ul{
             margin: 0 !important;
