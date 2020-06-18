@@ -12,3 +12,5 @@ $('#forecastTab').click(function () {
     ($("#savingsForecast").hasClass('d-none')) ? $('#savingsForecast').removeClass('d-none') : '';
     $("#interestCalculator").addClass('d-none');
 })
+
+// DATEPICKER
