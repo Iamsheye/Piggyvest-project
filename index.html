@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/navbar.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/994a65373d.js" crossorigin="anonymous"></script>
   <title>Piggyvest Interest Calculator</title>
 </head>
 
@@ -41,7 +42,21 @@
                   <img src="/img/piggy-png_1_.png" alt="Logo" class="img-fluid ml-2" width="150">
                   <div class="d-flex flex-column">
                     <button class="badge badge-success mt-1 mr-2 px-2 border-0">Export</button>
-                    <button class="badge badge-primary mt-1 mr-2 px-2 border-0">Share</button>
+                    <button class="badge badge-primary mt-1 mr-2 px-2 border-0" data-toggle="modal" data-target="#myModal">Share</button>
+                    <div class="modal" id="myModal" style="display:none;">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <a href="" class="fab fa-facebook-square" style="font-size:5rem;"></a>
+                            <a class="fab fa-twitter-square" href="https://twitter.com/intent/tweet?text=Checkout%20this%20Piggyvest%20Calculator%20-http://www.piggyvest-calc.tk/" style="margin-left:30px;font-size:5rem;"></a>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
                   </div>
                 </div>
                 <div class="card-body">
@@ -172,6 +187,9 @@
     <input type="hidden" value="" id="days_selected">
     <input type="hidden" value="" id="product_selected">
   </div>
+  
+
+  <script>  </script>
   <script src=https://code.jquery.com/jquery-3.5.1.js integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="js/bootstrap-js/bootstrap.min.js"></script>
   <script src="js/custom-js/script.js"></script>
