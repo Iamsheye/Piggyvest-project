@@ -4,12 +4,12 @@ calculateInterest = () => {
     if(isNaN(amount)){
         alert("Enter a valid Amount!");
     }
-    else if(document.getElementById('product_selected') == ""){
-        alert("select a product!");
-    }
-    else if(document.getElementById('days_selected') == ""){
+    else if(document.getElementById('time-selector').selectedIndex == 0){
         alert("select duration!");
     }
+    else if(document.getElementById('product-selector').selectedIndex == 0){
+        alert("select a product!");
+    }    
     else{
         const productRate = {
             piggybank:0.10,
@@ -113,4 +113,17 @@ setProduct = (product) => {
         document.getElementById('annual_interest').innerHTML = "6";
         document.getElementById('daily_interest').innerHTML = "0.016";
     }
+}
+
+const isNumber = (evt) => {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    //console.log("Key code: "+charCode);
+    if(charCode == 46){
+        return true
+    }
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
 }

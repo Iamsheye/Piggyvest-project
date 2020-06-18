@@ -16,7 +16,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg px-3 px-lg-5" role="navigation">
-    <a class="navbar-brand ml-lg-5" href="#"><img src="/img/piggy-png_1_.png" class="img-fluid" width="150"></a>
+    <a class="navbar-brand ml-lg-5" href="#"><img src="./img/piggy-png_1_.png" class="img-fluid" width="150"></a>
     <button class="d-block d-lg-none custom-burger d-flex flex-column">
       <div class="line my-1"></div>
       <div class="line my-1"></div>
@@ -74,12 +74,12 @@
                 <!-- Deposit Amount -->
                 <div class="form-group mx-3 mx-md-5">
                   <label class="font-weight-bold text-primary">Deposit Amount</label>
-                  <input type="text" name="deposit" class="form-control" id="deposit_amount" value="" />
+                  <input type="text" name="deposit" class="form-control" id="deposit_amount" value="" onkeypress="return isNumber(event)" />
                 </div>
                 <!-- Duration -->
                 <div class="form-group mx-3 mx-md-5">
                   <label class="font-weight-bold text-primary">Duration</label>
-                  <select class="form-control" name="time-select" onchange="setDays(this.value)">
+                  <select class="form-control" name="time-select" onchange="setDays(this.value)" id="time-selector">
                     <option value="">Select Duration</option>
                     <option value="7">7 days</option>
                     <option value="14">14 days</option>
@@ -91,7 +91,7 @@
                 <!-- Product -->
                 <div class="form-group mx-3 mx-md-5">
                   <label class="font-weight-bold text-primary">Product</label>
-                  <select class="form-control" name="product-select" onchange="setProduct(this.value)">
+                  <select class="form-control" name="product-select" onchange="setProduct(this.value)" id="product-selector">
                     <option value="">Select Product</option>
                     <option value="1">Piggybank</option>
                     <option value="2">Flexnaira</option>
