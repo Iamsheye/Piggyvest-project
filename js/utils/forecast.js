@@ -28,25 +28,29 @@ function forecast(){
                 if(savingsDuration <= 1){
                     alert("Date range must be greater than 1 day for Daily saving interval")
                 }else{
+                    document.getElementById("interval_text").innerHTML = $("#savings_interval").val()
                     document.getElementById("recommended_saving").innerHTML = dailyRecommended.toFixed(2)
                 }
             } else if ($("#savings_interval").val() === "Weekly") {
                 if (savingsDuration <= 7) {
                     alert("Date range must be greater than 1 week for Weekly saving interval")
                 } else {
-                    document.getElementById("recommended_saving").innerHTML = dailyRecommended.toFixed(2) * 7
+                    document.getElementById("interval_text").innerHTML = $("#savings_interval").val()
+                    document.getElementById("recommended_saving").innerHTML = (dailyRecommended.toFixed(2) * 7).toFixed(2)
                 }
             } else if ($("#savings_interval").val() === "Monthly") {
                 if (savingsDuration <= 28) {
                     alert("Date range must be greater than 1 month for Monthly saving interval")
                 } else {
-                    document.getElementById("recommended_saving").innerHTML = dailyRecommended.toFixed(2) * 28
+                    document.getElementById("interval_text").innerHTML = $("#savings_interval").val()
+                    document.getElementById("recommended_saving").innerHTML = (dailyRecommended.toFixed(2) * 28).toFixed(2)
                 }
             } else if ($("#savings_interval").val() === "Yearly") {
                 if (savingsDuration <= 365) {
                     alert("Date range must be greater than 1 year for Yearly saving interval")
                 } else {
-                    document.getElementById("recommended_saving").innerHTML = dailyRecommended.toFixed(2) * 365
+                    document.getElementById("interval_text").innerHTML = $("#savings_interval").val()
+                    document.getElementById("recommended_saving").innerHTML = (dailyRecommended.toFixed(2) * 365).toFixed(2)
                 }
             }else{
                 alert("Invalid saving plan selected");
