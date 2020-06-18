@@ -1,6 +1,9 @@
 body {
   background: #ffffff;
 }
+a:hover{
+  text-decoration: none;
+}
 .text-primary{
   color: #083E9E !important;
 }
@@ -12,10 +15,25 @@ body {
   background-color: #30c57b;
   border: #30c57b;
 }
+.bg-primary{
+  background-color: #083E9E !important;
+}
 .badge-success{
   background-color: #30c57b !important;
   /* border: #30c57b !important; */
 }
 .badge-primary{
   background-color: #083E9E !important;
+}
+.custom-top-radius{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.tab-active{
+    background-color: #fff !important;
+    color:#083E9E !important;
+}
+.custom-tab{
+  background-color: #083E9E;
+  color:#fff;
 }
