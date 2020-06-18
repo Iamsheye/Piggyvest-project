@@ -30,10 +30,8 @@ a:hover{
   border-top-right-radius: 16px;
 }
 .tab-active{
-    background-color: #fff !important;
-    color:#083E9E !important;
-}
-.custom-tab{
-  background-color: #083E9E;
-  color:#fff;
+    color: #fff !important;
+    background-color:#083E9E !important;
+    border-bottom: 2px solid #30c57b;
+    font-size: 1.125rem;
 }
