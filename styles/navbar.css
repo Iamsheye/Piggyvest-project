@@ -1,0 +1,81 @@
+.btn-primary{
+            background-color: #083E9E;
+            border-color:  #083E9E;
+        }
+        .btn-outline-primary{
+            /* background-color: #fff; */
+            border-color:  #083E9E;
+            color: #083E9E;
+        }
+        .btn-outline-primary:hover{
+            background-color: #083E9E;
+            border-color:  #083E9E;
+
+        }
+        .nav-link{
+            color:#083E9E;
+        }
+        .custom-burger{
+            background-color: transparent;
+            border: none;
+            position: relative;
+            z-index: 100;
+        }
+        .custom-burger .line{
+            background-color: #083E9E;
+            width: 20px;
+            height: 2px;
+        }
+        .white-line{
+            background-color: #fff !important;
+            border: #fff;
+        }
+        .overlay-bar{
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            margin-left: 100%;
+            background-color:rgba(8, 64, 160, 0.84);
+            overflow: hidden;
+        }
+        .overlay-bar ul{
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style-type: none;
+        }
+        .overlay-bar ul li a{
+            text-decoration: none;
+        }
+        .overlay-bar ul li a:hover{
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, .2);
+        }
+        .expand{
+            animation-name: expand-bar;
+            animation-duration: 0.1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        .reduce{
+            animation-name: reduce-bar;
+            animation-duration: 0.1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes expand-bar{
+            from{
+                margin-left: 100%;
+            }
+            to{
+                margin-left: 0%;
+            }
+        }
+        @keyframes reduce-bar{
+            from{
+                margin-left: 0%;
+            }
+            to{
+                margin-left: 100%;
+            }
+        }

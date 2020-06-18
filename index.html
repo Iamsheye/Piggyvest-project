@@ -9,14 +9,54 @@
   <link href=https://fonts.googleapis.com/css2?family=Karla&display=swap rel="stylesheet">
   <link rel="stylesheet" href="styles/bootstrap.css" />
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/navbar.css">
   <title>Piggyvest Interest Calculator</title>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg px-3 px-lg-5" role="navigation">
+    <a class="navbar-brand ml-lg-5" href="#"><img src="/img/piggy-png_1_.png" class="img-fluid" width="150"></a>
+    <button class="d-block d-lg-none custom-burger d-flex flex-column">
+      <div class="line my-1"></div>
+      <div class="line my-1"></div>
+      <div class="line my-1"></div>
+    </button>
+    <div class="collapse navbar-collapse mr-lg-5">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-3">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="#" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="#" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="#" class="btn btn-outline-primary btn-block px-4 py-2">Create Free Account</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="overlay-bar">
+    <ul class="mx-0">
+      <li class="mx-3 mb-2 py-4"></li>
+      <li class="mx-4"><a href="#" class="d-block w-100 py-3 px-3 text-light">About</a></li>
+      <li class="mx-4"><a href="#" class="d-block w-100 py-3 px-3 text-light">Services</a></li>
+      <li class="mx-4"><a href="#" class="d-block w-100 py-3 px-3 text-light">FAQ</a></li>
+      <li class="mx-4"><a href="#" class="d-block w-100 py-3 px-3 text-light">Blog</a></li>
+      <li class="mx-4"><a href="#" class="d-block w-100 py-3 px-3 text-light">Login</a></li>
+      <li class="mx-4"><a href="#" class="d-block w-100 py-3 px-3 text-light">Create Free Account</a></li>
+    </ul>
+  </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3" style="background-color: #0D60D9;">
-      </div>
       <div class="col-sm-9">
         <h1 class="head-calc">Interest Calculator</h1>
         <p class="sub-head-calc">Let’s calculate the interest on your deposits</p>
@@ -138,6 +178,7 @@
   <script src=https://code.jquery.com/jquery-3.5.1.js integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="js/bootstrap-js/bootstrap.min.js"></script>
   <script src="js/custom-js/script.js"></script>
+  <script src="js/custom-js/sidebar.js"></script>
   <script src="./js/utils/calculate.js"></script>
 </body>
 
