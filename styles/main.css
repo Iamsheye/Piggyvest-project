@@ -1,8 +1,14 @@
 body {
   background: #ffffff;
 }
-
-.head-calc {
+.text-primary{
+  color: #083E9E !important;
+}
+.btn-success{
+  background-color: #30c57b;
+  border: #30c57b;
+}
+/* .head-calc {
   margin-top: 68px;
   font-family: Roboto;
   font-weight: bold;
@@ -219,4 +225,4 @@ hr {
   display: block;
   margin-top: -5px;
   margin-right: 145px;
-}
+} */
