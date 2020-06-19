@@ -1,5 +1,14 @@
-calculateInterest = () => {     
+var report = "nill";
+const interestData = {
+    "Deposit Amount": "",
+    "Duration": "",
+    "Product": "", 
+    "Total Interest Amount": ""
+}
+calculateInterest = () => {  
+    report = 'interest';   
     let amount = document.getElementById('deposit_amount').value;
+    interestData['Deposit Amount'] = amount;
     amount = parseFloat(amount);
     if(isNaN(amount)){
         alert("Enter a valid Amount!");
@@ -20,11 +29,14 @@ calculateInterest = () => {
          
         let product = document.getElementById('product_selected').value;   
         let duration = document.getElementById('days_selected').value;
+        interestData['Duration'] =duration;
+        interestData['Product'] = product;
         duration = parseInt(duration);     
         console.log(productRate[product]);
         let interest = productRate[product] / 365 * parseInt(duration) * parseFloat(amount);
         interest = interest.toFixed(2);
         document.getElementById('total_interest').innerHTML = interest;
+        interestData['Total Interest Amount'] = interest;
          
     }
     

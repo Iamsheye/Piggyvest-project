@@ -6,7 +6,9 @@ const forecastData = {
     "End Date":"",
     "Recommended Savings":""
 }
+
 function forecast(){
+    report = 'forecast';
     let startDate = new Date($("#startDate").val())
     let endDate = new Date($("#endDate").val())
     if (isNaN($("#expected_returns").val()) || $("#expected_returns").val() <=0){
