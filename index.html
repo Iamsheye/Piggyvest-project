@@ -16,6 +16,8 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=359655524470461&autoLogAppEvents=1" nonce="cylIDkHf"></script>
   <nav class="navbar navbar-expand-lg"></nav>
   <!-- Main Content Container -->
   <div class="container">
@@ -39,7 +41,7 @@
                 </div>
                 <!-- End of Card Tabs -->
                 <div class="d-flex justify-content-between">
-                  <img src="/img/piggy-png_1_.png" alt="Logo" class="img-fluid ml-2" width="150">
+                  <img src="./img/piggy-png_1_.png" alt="Logo" class="img-fluid ml-2" width="150">
                   <div class="d-flex flex-column">
                     <button class="badge badge-success mt-1 mr-2 px-2 border-0">Export</button>
                     <button class="badge badge-primary mt-1 mr-2 px-2 border-0" data-toggle="modal" data-target="#myModal">Share</button>
@@ -47,7 +49,7 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-body">
-                            <a href="" class="fab fa-facebook-square" style="font-size:5rem;"></a>
+                            <a href="" class="fab fa-facebook-square" style="font-size:5rem;" id="fbshare"></a>
                             <a class="fab fa-twitter-square" href="https://twitter.com/intent/tweet?text=Checkout%20this%20Piggyvest%20Calculator%20-http://www.piggyvest-calc.tk/" style="margin-left:30px;font-size:5rem;"></a>
                           </div>
                           <div class="modal-footer">
@@ -196,6 +198,15 @@
   <script src="js/custom-js/sidebar.js"></script>
   <script src="./js/utils/calculate.js"></script>
   <script src="./js/utils/forecast.js"></script>
+  <script>
+    document.getElementById('fbshare').onclick = function() {
+      FB.ui({
+        display: 'popup',
+        method: 'share',
+        href: 'http://www.piggyvest-calc.tk/ ',
+      }, function(response){});
+    }
+    </script>
 </body>
 
 </html>
