@@ -43,7 +43,7 @@
                 <div class="d-flex justify-content-between">
                   <img src="./img/piggy-png_1_.png" alt="Logo" class="img-fluid ml-2" width="150">
                   <div class="d-flex flex-column">
-                    <button class="badge badge-success mt-1 mr-2 px-2 border-0">Export</button>
+                    <button class="badge badge-success mt-1 mr-2 px-2 border-0" onclick="download()">Export</button>
                     <button class="badge badge-primary mt-1 mr-2 px-2 border-0" data-toggle="modal" data-target="#myModal">Share</button>
                     <div class="modal" id="myModal" style="display:none;">
                       <div class="modal-dialog">
@@ -198,6 +198,7 @@
   <script src="js/custom-js/sidebar.js"></script>
   <script src="./js/utils/calculate.js"></script>
   <script src="./js/utils/forecast.js"></script>
+
   <script>
     
     document.getElementById('fbshare').onclick = function() {
@@ -209,6 +210,9 @@
     }
 
     </script>
+    
+    <script src="./js/utils/xlsx.full.min.js"></script>
+    <script src="./js/utils/download.js"></script>
 </body>
 
 </html>
